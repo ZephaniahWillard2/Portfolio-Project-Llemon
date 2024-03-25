@@ -1,20 +1,31 @@
 /* Header and h1 styling */
 header img{
-    width: 530px;
-    height: 640px;
+    width: 450px;
+    height: 550px;
     background-color: rgba(90, 204, 230, 0.314);
-    padding: 20px;
-    
+    padding: 40px;
+    border-radius: 10%;
 }
+
+
 header{
     text-align: center;
 }
 h1{
     text-align: center;
+    font-family: fantasy;
+    padding-top: 30px;
+    margin-bottom: -10px;
+}
+.head-container p{
+    font-size: larger;
+    line-height: 35px;
 }
 
 
+
 /* nav styling */
+
 nav ul{
     list-style: none;
     text-align: center;
@@ -22,7 +33,11 @@ nav ul{
 nav li{
     display: inline-block;
     padding: 40px;
+    font-size: large;
 }
+/* nav li a{
+    font-family: fantasy ;
+} */
 nav li a:hover{
     background-color: rgba(90, 204, 230, 0.314);
     color: rgb(20, 53, 30);
@@ -34,6 +49,38 @@ nav li a:hover{
 body{
     background-color: rgb(252, 245, 247);
 }
+h2{
+    font-family: fantasy ;
+
+}
+section article{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.about-container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.about-container p{
+    font-size: larger;
+    line-height: 35px;
+}
+.container{
+    font-size: larger;
+    line-height: 35px;
+}
+/* section article p{
+    text-wrap: wrap;
+} */
+
+/* body img */
+section img{
+    height: 50%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+
 /* flexbox body */
 
 section{
@@ -43,6 +90,8 @@ section{
 article{
     flex: 1;
 }
+
+
 
 /* Footer styling */
 footer{
@@ -57,5 +106,7 @@ footer img{
     width: 100px;
     height: 100px;
     background-color: rgba(90, 204, 230, 0.314);
+    padding: 20px;
+    border-radius: 30%;
 
 }
