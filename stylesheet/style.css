@@ -6,42 +6,65 @@ header img{
     padding: 40px;
     border-radius: 10%;
 }
-
-
 header{
     text-align: center;
 }
 h1{
     text-align: center;
-    font-family: fantasy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 30px;
     margin-bottom: -10px;
+    font-size: 400%;
+    letter-spacing: 2px;
+    color: black;
 }
-.head-container p{
-    font-size: larger;
-    line-height: 35px;
-}
-
-
 
 /* nav styling */
 
+nav{
+    outline: solid;
+    background-color: white;
+    border-radius: 1%;
+    
+}
 nav ul{
     list-style: none;
     text-align: center;
+    letter-spacing: 2px;
 }
 nav li{
     display: inline-block;
     padding: 40px;
-    font-size: large;
 }
-/* nav li a{
+nav ul a{
+    color: black;
     font-family: fantasy ;
-} */
+    font-weight: bold;
+    font-size: x-large;
+}
 nav li a:hover{
     background-color: rgba(90, 204, 230, 0.314);
     color: rgb(20, 53, 30);
-    font-weight: bold;
+    transform: scale(1.5);
+    padding: 5px;
+    border-radius: 10%;
+}
+
+/* promo container */
+
+.promo-container{
+    position: relative;
+    text-align: center;
+}
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.promo-container img{
+    height: 400px;
+    width: 1500px;
 }
 
 
@@ -51,35 +74,67 @@ body{
 }
 h2{
     font-family: fantasy ;
-
+    padding-bottom: 18px;
+    letter-spacing: 2px;
 }
 section article{
     margin-left: 100px;
     margin-right: 100px;
 }
+
+.container{
+    font-size: larger;
+    line-height: 35px;
+    padding-top: 15px;
+    padding-bottom: -100px;
+    background-color: white;
+    box-shadow: inset 0px -30px 40px 30px rgb(252, 245, 247);
+}
+.container p{
+    outline: solid;
+}
+.container p:hover{
+    transform: scale(1.1);
+    outline: none;
+    background-color: rgba(252, 223, 6, 0.898);
+    padding: 2px;
+    border-radius: 10%;
+    font-weight: bold;
+    box-shadow: 0px -5px 5px 10px rgba(252, 223, 6, 0.898);
+}
+
+
+#menu-page h2{
+    outline: solid;
+    padding-top: 20px;
+    background-color: rgba(90, 204, 230, 0.314);
+}
+
+
 .about-container{
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 80px;
 }
 .about-container p{
     font-size: larger;
     line-height: 35px;
+    outline: solid;
 }
-.container{
-    font-size: larger;
-    line-height: 35px;
+.about-container p:hover{
+    transform: scale(1.15);
+    outline: none;
+    background-color: rgba(90, 204, 230, 0.314);
+    padding: 2px;
+    border-radius: 5%;
 }
-/* section article p{
-    text-wrap: wrap;
-} */
+
 
 /* body img */
 section img{
-    height: 50%;
-    width: 100%;
+    height: 35%;
+    width: 105%;
     border-radius: 10%;
 }
-
 
 /* flexbox body */
 
@@ -91,13 +146,24 @@ article{
     flex: 1;
 }
 
+/* Menu */
 
+.food-items{
+    border-bottom: solid;
+    padding-bottom: 30px;
+}
 
 /* Footer styling */
 footer{
     display: flex;
     padding: 30px;
     text-align: center;
+    outline: solid;
+    background-color: rgba(90, 204, 230, 0.314);
+}
+.class-name{
+    position: relative;
+    height: fixed;
 }
 footer div{
     flex: 1;
@@ -105,8 +171,23 @@ footer div{
 footer img{
     width: 100px;
     height: 100px;
-    background-color: rgba(90, 204, 230, 0.314);
+    background-color: rgb(20, 53, 30);
     padding: 20px;
     border-radius: 30%;
-
+}
+footer img:hover{
+    transform: rotateY(360deg);
+    transition: 3s;
+}
+.copyrite{
+    padding: 60px;
+    font-size: large;
+    text-shadow: 1px 1px 3px grey;
+}
+.copyrite:hover{
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    transition: 5s;
+    text-transform: uppercase;
+    background-color: rgba(252, 223, 6, 0.898);
+    border-radius: 50%;
 }
